@@ -1,32 +1,59 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# DVD Collector
+Mjesto za testiranje Git koda i opcija sustava online ili lokalno s VS Code
 
-Welcome,
+## Purpose
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+## Description [Interactive Responsive Website]
 
-## Reminders
+## UX Design
+Proposed by Jesse James Garrett, this process is represented as five levels of activity called planes.  
+These planes and their concerns are as follows.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+### Target audience
 
-## Creating the Heroku app
+### First Time Visitor Goals
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Returning Visitor Goals
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### User Stories
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### The strategy plane: 
+What are you aiming to achieve in the first place and for whom?
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### The scope plane: 
+Which features, based on information from the strategy plane, do you want to include in your design?
+What's on the table for a production release and what's not, at least for now?
 
-Connect your GitHub repository and deploy as normal.
+### The structure plane: 
+How is the information structured and how is it logically grouped?
 
-## Constraints
+### The skeleton plane: 
+How will our information be represented, and how will the user navigate to the information and the features?
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### The surface plane: 
+What will the finished product look like?
+What colors, typography, and design elements will we use?
 
----
+### Flowchart/Wireframes
 
-Happy coding!
+### Colour Scheme
+
+### Typography
+
+## Features
+
+### Future Features
+
+## Testing
+
+### Manual Testing
+
+### Validator Testing
+
+### Bugs and Issues
+
+## Deployment
+
+## Technologies
+
+## Credits [Acknowledgments]

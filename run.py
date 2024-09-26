@@ -1,3 +1,8 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+print("\nMenu:\n")
+print("1. List all records")
+print("2. Create record")
+print("3. Delete record")
+print("4. Edit record")
+print("5. Show statistics")
+print("_______________________")
+print("[Choose number or Exit]")

@@ -1,5 +1,5 @@
 # DVD Collector
-Mjesto za testiranje Git koda i opcija sustava online ili lokalno s VS Code
+Python application for creating private list of records for DVD movies
 
 ## Purpose
 

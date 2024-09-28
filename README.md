@@ -53,6 +53,7 @@ What colors, typography, and design elements will we use?
 ### Bugs and Issues
 
 ## Deployment
+https://dvd-collector-a3ca4dc586a0.herokuapp.com/
 
 ## Technologies
 

@@ -1,3 +1,4 @@
+
 import time
 
 menu=True
@@ -21,5 +22,5 @@ while menu:
       time.sleep(3)  # Delay for 3 seconds
       print("\n Goodbye") 
       break
-    elif menu!="":
-      print("\n >>> Not Valid Choice Try again!") 
+    else:
+      print("\n >>> Not Valid Choice. Try again!") 

@@ -3,7 +3,7 @@ Python application for creating private list of records for DVD movies
 
 ## Purpose
 
-## Description [Interactive Responsive Website]
+## Description
 
 ## UX Design
 Proposed by Jesse James Garrett, this process is represented as five levels of activity called planes.  
@@ -36,6 +36,8 @@ What colors, typography, and design elements will we use?
 
 ### Flowchart/Wireframes
 
+![Flowchart of the App](assets/flowchart-dvd-collector.webp)
+
 ### Colour Scheme
 
 ### Typography
@@ -57,4 +59,8 @@ https://dvd-collector-a3ca4dc586a0.herokuapp.com/
 
 ## Technologies
 
+Python
+
 ## Credits [Acknowledgments]
+
+Flowchart made by Draw.io portable desktop app

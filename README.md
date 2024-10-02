@@ -3,7 +3,10 @@ Python application for creating private list of records for DVD movies
 
 ## Purpose
 
-## Description
+## Data Model
+
+Describe data model and structures of the app,
+how data is stored, organized and manipulated.
 
 ## Target audience
 
@@ -14,6 +17,17 @@ Python application for creating private list of records for DVD movies
 ### Colour Scheme
 
 ## Features
+
+- CRUD functionality
+- Error handling
+- Heroku deployment
+
+### Future Features
+
+- Extended data recording (more input options)
+- Structured listing of all records
+- Global statistics of the collection
+- Listing only by group (title, year, genre)
 
 ## Testing
 

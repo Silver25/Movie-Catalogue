@@ -33,7 +33,7 @@ def menu():
             movies = SHEET.worksheet('movies')
             data = movies.get_all_values()
             print(data)
-            
+
         elif choice == "2":
             print("\n >>> Record Added!")
         elif choice == "3":

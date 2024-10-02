@@ -29,7 +29,7 @@ def menu():
       """)
         choice = input("What would you like to do? ")
         if choice == "1":
-            # print("\n >>> Records Listed!")
+            print("\n >>> All records Listed!")
             movies = SHEET.worksheet('movies')
             data = movies.get_all_values()
             print(data)

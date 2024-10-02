@@ -1,6 +1,7 @@
 
 import time
 
+
 def menu():
     """
     """
@@ -31,7 +32,7 @@ def menu():
         else:
             print("\n >>> Not Valid Choice. Try again!")
             continue
-        
+
+
 if __name__ == "__main__":
     menu()
-    

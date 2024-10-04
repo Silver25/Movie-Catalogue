@@ -16,6 +16,7 @@ SHEET = GSPREAD_CLIENT.open('dvdcollector')
 
 def menu():
     """
+    Objective of the function!
     """
     menu = True
     while menu:
@@ -47,6 +48,7 @@ def menu():
             break
         else:
             print("\n >>> Not Valid Choice. Try again!")
+            time.sleep(3)  # Delay for 3 seconds
             continue
 
 

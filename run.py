@@ -33,10 +33,12 @@ def menu():
             print("\n >>> All records Listed!")
             movies = SHEET.worksheet('movies')
             data = movies.get_all_values()
-            print(data)
+            # print(data)
+            for item in data:
+                print(f"{item[0]}")
 
         elif choice == "2":
-            sheet = GSPREAD_CLIENT.open('movies').sheet1
+            sheet = SHEET.worksheet('movies')
             data = input("Enter the name of the movie: ")
             sheet.append_row([data])
             print("\n >>> Record Added!")

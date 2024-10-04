@@ -24,7 +24,7 @@ def menu():
       Menu:
       1.List the Records
       2.Add a Record
-      3.Edit a record
+      3.Edit a Record
       4.Delete a Record
       5.Exit/Quit
       """)

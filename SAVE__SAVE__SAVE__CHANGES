@@ -1,0 +1,2 @@
+new workspace:
+pip3 install gspread google-auth

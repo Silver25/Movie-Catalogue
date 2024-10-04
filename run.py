@@ -36,11 +36,17 @@ def menu():
             print(data)
 
         elif choice == "2":
+            sheet = GSPREAD_CLIENT.open('movies').sheet1
+            data = input("Enter the name of the movie: ")
+            sheet.append_row([data])
             print("\n >>> Record Added!")
+
         elif choice == "3":
             print("\n >>> Record Edited!")
+
         elif choice == "4":
             print("\n >>> Record Deleted!")
+
         elif choice == "5":
             print("\n >>> Closing app!")
             time.sleep(3)  # Delay for 3 seconds

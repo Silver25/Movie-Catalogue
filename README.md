@@ -18,9 +18,12 @@ how data is stored, organized and manipulated.
 
 ## Features
 
-- CRUD functionality
-- Error handling
-- Heroku deployment
+- Menu with choices
+- Listing of all records from file
+- Create/Read/Update/Delete functionality
+- User input Error handling
+- Google Docs API
+- Deployment on Heroku
 
 ### Future Features
 

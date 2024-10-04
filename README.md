@@ -40,7 +40,10 @@ Inspection of the code locally was done with the help of VS Code extensions:
 - Autopep8 to format the code properly 
 - Flake8 to check for errors
 
-Manual testing of every step accomplished in VS Code terminal with print() function.
+Test of small chunks of the code with:
+- [Online Python Compiler](https://www.tutorialspoint.com/online_python_compiler.php)   
+- [Code Institute Python Linter](https://pep8ci.herokuapp.com/#)  
+Manual testing of every step accomplished through Gitpod and VS Code terminal with print() function.
 
 ### Validator Testing
 

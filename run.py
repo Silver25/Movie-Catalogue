@@ -41,7 +41,7 @@ def menu():
             sheet = SHEET.worksheet('movies')
             data = input("Enter the name of the movie: ")
             sheet.append_row([data])
-            print("\n >>> Record Added!")
+            print("\n >>> New Record Added!")
 
         elif choice == "3":
             print("\n >>> Record Edited!")

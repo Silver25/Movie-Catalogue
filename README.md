@@ -19,10 +19,11 @@ how data is stored, organized and manipulated.
 
 - Menu with choices
 - Listing of all records from file
-- Create/Read/Update/Delete functionality
+- Creating new record
+- Saving input data in cloud (Google Docs API)
 - User input Error handling
-- Google Docs API
-- Deployment on Heroku
+- Warning in the case of wrong input
+- Terminal access (Deployment on Heroku)
 
 ### Future Features
 

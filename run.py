@@ -17,6 +17,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('dvdcollector')
 
+
 def menu():
     """
     Main function of the app!
@@ -38,15 +39,24 @@ def menu():
         if choice == "1":
             print("\n >>> All records Listed!")
             movies = SHEET.worksheet('movies')  # connecting to Google sheet
-            data = movies.get_all_values()  # collecting all records from sheet
+            data = movies.get_all_values()  # collecting all records from the sheet
 
             for item in data:
-                print(f"{item[0]}")  # display of records in terminal
+                # print(f"{item[0]}")  # display of records in terminal
+                movie_title = item[0].title()  # convert to title case
+                print(movie_title)
+            time.sleep(2)  # delay for 2 seconds
 
         elif choice == "2":
             sheet = SHEET.worksheet('movies')
-            data = input("Enter the name of the movie: ")
-            sheet.append_row([data])
+            # data = input("Enter the name of the movie: ")
+            while True:
+                data = input("Enter the name of the movie: ")  # expected user action
+                if data:
+                    break
+                else:
+                    print("Movie name cannot be empty.")
+            sheet.append_row([data])  # update sheet with the new row of data
             print("\n >>> New Record Added!")
 
         elif choice == "3":

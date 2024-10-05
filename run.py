@@ -1,5 +1,8 @@
+# Library to include timing/delay options in code
 import time
+# Library essential for interacting with Google Sheets
 import gspread
+# Authentication to access and interact with Google Sheets
 from google.oauth2.service_account import Credentials
 
 SCOPE = [

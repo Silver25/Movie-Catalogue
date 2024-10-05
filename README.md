@@ -1,7 +1,8 @@
 # DVD Collector
-Python application for creating private list of records for DVD movies
+Command-line Python application that allows user to create private list of records for DVD movie collection.
 
 ## Purpose
+Application is providing value to users creating envinronment to simple organize private movie collection.
 
 ## Data Model
 
@@ -13,8 +14,6 @@ how data is stored, organized and manipulated.
 ### Flowchart/Wireframes
 
 ![Flowchart of the App](assets/flowchart-dvd-collector.webp)
-
-### Colour Scheme
 
 ## Features
 

@@ -11,18 +11,20 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive"
 ]
 
+# Constant variables for credentials and path of Google sheet
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('dvdcollector')
 
-
 def menu():
     """
-    Objective of the function!
+    Main function of the app!
+    Hold all elements from Menu within separate code blocks
+    and functionality for every option.
     """
     menu = True
-    while menu:
+    while menu:   # building app Menu with options to choose from
         print("""
       Menu:
       1.List the Records
@@ -31,14 +33,15 @@ def menu():
       4.Delete a Record
       5.Exit/Quit
       """)
-        choice = input("What would you like to do? ")
+        choice = input("What would you like to do? ")  # expected user action
+
         if choice == "1":
             print("\n >>> All records Listed!")
-            movies = SHEET.worksheet('movies')
-            data = movies.get_all_values()
-            # print(data)
+            movies = SHEET.worksheet('movies')  # connecting to Google sheet
+            data = movies.get_all_values()  # collecting all records from sheet
+
             for item in data:
-                print(f"{item[0]}")
+                print(f"{item[0]}")  # display of records in terminal
 
         elif choice == "2":
             sheet = SHEET.worksheet('movies')

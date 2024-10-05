@@ -38,6 +38,7 @@ how data is stored, organized and manipulated.
 
 Inspection of the code locally was done with the help of VS Code extensions:
 - Autopep8 to format the code properly 
+- Writen code adheres to Python best practices, such as using consistent indentation.
 - Flake8 to check for errors
 
 Test of small chunks of the code with:

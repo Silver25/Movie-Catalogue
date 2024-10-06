@@ -44,7 +44,6 @@ def menu():
             data = movies.get_all_values()
 
             for item in data:  # loop through each row in the sheet
-                # print(f"{item[0]}")  # display of records in terminal
                 movie_title = item[0].title()  # convert to title case
                 print(movie_title)
             time.sleep(2)  # delay for 2 seconds

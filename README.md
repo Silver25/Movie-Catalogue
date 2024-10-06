@@ -64,4 +64,6 @@ Python
 
 ## Credits [Acknowledgments]
 
-Flowchart made by Draw.io portable desktop app
+Flowchart made by Draw.io portable desktop app  
+https://www.python-engineer.com/posts/google-sheets-api/  
+https://understandingdata.com/posts/the-comprehensive-guide-to-google-sheets-with-python/

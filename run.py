@@ -25,7 +25,8 @@ def menu():
     and functionality for every option.
     """
     menu = True
-    while menu:   # building app Menu with options to choose from
+    # building app Menu with options to choose from
+    while menu:
         print("""
       Menu:
       1.List the Records
@@ -34,35 +35,53 @@ def menu():
       4.Delete a Record
       5.Exit/Quit
       """)
-        choice = input("What would you like to do? ")  # expected user action
+        choice = input("What would you like to do? ")
 
         if choice == "1":
             print("\n >>> All records Listed!")
-            movies = SHEET.worksheet('movies')  # connecting to Google sheet
-            data = movies.get_all_values()  # collecting all records from the sheet
+            # connecting to Google sheet
+            movies = SHEET.worksheet('movies')
+            # collecting all records from the sheet
+            data = movies.get_all_values()
 
-            for item in data:
+            for item in data:  # loop through each row in the sheet
                 # print(f"{item[0]}")  # display of records in terminal
                 movie_title = item[0].title()  # convert to title case
                 print(movie_title)
             time.sleep(2)  # delay for 2 seconds
 
         elif choice == "2":
-            sheet = SHEET.worksheet('movies')
+            new_movie = SHEET.worksheet('movies')
             # data = input("Enter the name of the movie: ")
-            while True:
-                data = input("Enter the name of the movie: ")  # expected user action
+            while True:  # loop to check if input is valid
+                data = input("Enter the name of the movie: ")
                 if data:
                     break
                 else:
                     print("Movie name cannot be empty.")
-            sheet.append_row([data])  # update sheet with the new row of data
+            # update sheet with the new row of data
+            new_movie.append_row([data])
             print("\n >>> New Record Added!")
 
         elif choice == "3":
             print("\n >>> Record Edited!")
 
         elif choice == "4":
+            worksheet = SHEET.get_worksheet(0)
+            # Get all the values in the sheet
+            data = worksheet.get_all_values()
+
+            # Define the word to delete
+            word_to_delete = input("Enter the title you want to delete: ")
+
+            # Iterate through all cells and delete the word
+            for i, row in enumerate(data):
+                for j, cell in enumerate(row):
+                    if word_to_delete in cell:
+                        data[i][j] = cell.replace(word_to_delete, '')
+
+            # Update the sheet with the modified data
+            worksheet.update('A1', data)
             print("\n >>> Record Deleted!")
 
         elif choice == "5":
@@ -70,6 +89,7 @@ def menu():
             time.sleep(3)  # Delay for 3 seconds
             print("\n Goodbye")
             break
+
         else:
             print("\n >>> Not Valid Choice. Try again!")
             time.sleep(3)  # Delay for 3 seconds

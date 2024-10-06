@@ -31,9 +31,8 @@ def menu():
       Menu:
       1.List the Records
       2.Add a Record
-      3.Edit a Record
-      4.Delete a Record
-      5.Exit/Quit
+      3.Delete a Record
+      4.Exit/Quit
       """)
         choice = input("What would you like to do? ")
 
@@ -52,7 +51,6 @@ def menu():
 
         elif choice == "2":
             new_movie = SHEET.worksheet('movies')
-            # data = input("Enter the name of the movie: ")
             while True:  # loop to check if input is valid
                 data = input("Enter the name of the movie: ")
                 if data:
@@ -64,16 +62,17 @@ def menu():
             print("\n >>> New Record Added!")
 
         elif choice == "3":
-            print("\n >>> Record Edited!")
-
-        elif choice == "4":
             worksheet = SHEET.get_worksheet(0)
             # Get all the values in the sheet
             data = worksheet.get_all_values()
 
             # Define the word to delete
-            word_to_delete = input("Enter the title you want to delete: ")
-
+            while True:  # loop to check if input is valid
+                word_to_delete = input("Enter the title you want to delete: ")
+                if word_to_delete:
+                    break
+                else:
+                    print("Movie name cannot be empty.")
             # Iterate through all cells and delete the word
             for i, row in enumerate(data):
                 for j, cell in enumerate(row):
@@ -84,7 +83,7 @@ def menu():
             worksheet.update('A1', data)
             print("\n >>> Record Deleted!")
 
-        elif choice == "5":
+        elif choice == "4":
             print("\n >>> Closing app!")
             time.sleep(3)  # Delay for 3 seconds
             print("\n Goodbye")

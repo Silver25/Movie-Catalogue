@@ -81,9 +81,12 @@ https://dvd-collector-a3ca4dc586a0.herokuapp.com/
 ![Google Drive API](assets/google_api_create_first_gdrive_credentials.webp)
 3. Create project on Google Cloud
 ![Create project](assets/google_api_create_project.webp)
-4. Create project on Heroku
-5. Transfer Google credentials on Heroku
-6. Deploy project on Heroku
+4. Create New App on Heroku
+5. Heroku App Settings -> Add Buildpacks [Python and Nod.js]
+6. Transfer Google credentials on Heroku:  
+   Heroku App Settings -> Config Vars [KEY and Value]
+7. Deploy App on Heroku -> Deploy -> Deployment method [GitHub]  
+8. Deploy -> Manual deploy -> Deploy a GitHub branch
 
 ## Technologies
 
@@ -92,7 +95,10 @@ Python
 ## Credits [Acknowledgments]
 
 I want to thank Rory for the invaluable guidance and support throughout the mentorship on this project.  
-The Love Sandwiches walkthrough was incredibly helpful. The step-by-step guidance made the learning process much easier to follow.  
+The "Love Sandwiches" walkthrough was incredibly helpful. The step-by-step guidance made the learning process much easier to follow.  
+Portable Windows software [IrfanView](https://www.irfanview.com/) for fast transformation  
 Flowchart made by Draw.io portable desktop app  
+Use of the [Grammarly](https://app.grammarly.com/) tool for guidance around the content  
+Locations with informations and examples:  
 https://www.python-engineer.com/posts/google-sheets-api/  
 https://understandingdata.com/posts/the-comprehensive-guide-to-google-sheets-with-python/
